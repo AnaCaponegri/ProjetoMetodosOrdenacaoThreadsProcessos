@@ -35,7 +35,8 @@ contadorDownloads.getOrDefault(arquivo.getName(), 0);
                 } 
             } 
         } 
- 
+    // Ordenação crescente por tamanho
+    lista.sort((a, b) -> Long.compare(a.getTamanho(), b.getTamanho()));
         return lista; 
     } 
  
