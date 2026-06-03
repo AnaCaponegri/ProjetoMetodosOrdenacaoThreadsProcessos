@@ -1,18 +1,12 @@
-## Getting Started
+# Resumo do Projeto: Servidor de Hospedagem de Arquivos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+* **O que é:** Um sistema cliente-servidor em **Java** com interface gráfica **Swing** para gerir e transferir arquivos em rede local.
+* **Tecnologias:** Sockets (`java.net`), Concorrência (`Thread`, `SwingWorker`) e Interface Gráfica (Swing).
 
-## Folder Structure
+### 🛠️ Funcionalidades Principais
+* **Servidor (`br.edu.servidor`):** Mapeia uma pasta local, exibe os metadados dos arquivos (nome, tamanho e downloads) numa `JTable`, atende requisições de download via **TCP** e responde a broadcasts de descoberta via **UDP**. Atualiza a interface em tempo real usando a EDT de forma segura.
+* **Cliente (`br.edu.cliente`):** Localiza o servidor automaticamente na rede (UDP), lista os arquivos disponíveis e realiza o download em background através de um **`SwingWorker`** (evitando o travamento da interface).
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### 📂 Estrutura de Pacotes
+* **Servidor:** `ServidorApp` (GUI), `ServidorTCP`, `ServidorUDP`, `TratadorClienteTCP` (Thread por cliente) e `GerenciadorArquivos`.
+* **Cliente:** `ClienteApp` (GUI), `ClienteTCP`, `ClienteUDP` e `DownloadWorker` (Concorrência).
