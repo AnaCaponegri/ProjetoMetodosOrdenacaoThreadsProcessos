@@ -42,7 +42,7 @@ O projeto utiliza dois protocolos de comunicação:
 TCP: utilizado para realizar a transferência dos arquivos.
 UDP: utilizado para localizar o servidor na rede local.
 
-##🧵 Concorrência
+## 🧵 Concorrência
 Foram utilizados conceitos de concorrência para permitir que o sistema realize operações sem bloquear a interface gráfica.
 
 Thread para atender múltiplas conexões no servidor
