@@ -2,6 +2,8 @@
 
 Projeto de estudos desenvolvido em Java com interface gráfica Swing, utilizando comunicação em rede para criar um sistema cliente-servidor de hospedagem e transferência de arquivos em uma rede local.
 
+Projeto de estudos desenvolvido em Java com interface gráfica Swing, utilizando comunicação em rede para criar um sistema cliente-servidor de hospedagem e transferência de arquivos em uma rede local.
+
 📌 O que o projeto faz
 
 O sistema é dividido em duas aplicações:
@@ -19,7 +21,6 @@ TCP
 UDP
 Threads
 SwingWorker
-
 📋 Funcionalidades
 🖥️ Servidor
 Mapear uma pasta local para disponibilizar arquivos
@@ -28,21 +29,20 @@ Exibir nome, tamanho e quantidade de downloads
 Receber solicitações de download via TCP
 Responder à descoberta de servidores via UDP
 Atualizar a interface durante as operações
-
 💻 Cliente
 Localizar automaticamente o servidor na rede
 Listar os arquivos disponíveis
 Solicitar arquivos ao servidor
 Realizar downloads
 Executar downloads em segundo plano sem travar a interface
-
 🌐 Comunicação em rede
+
 O projeto utiliza dois protocolos de comunicação:
 
 TCP: utilizado para realizar a transferência dos arquivos.
 UDP: utilizado para localizar o servidor na rede local.
-
 🧵 Concorrência
+
 Foram utilizados conceitos de concorrência para permitir que o sistema realize operações sem bloquear a interface gráfica.
 
 Thread para atender múltiplas conexões no servidor
