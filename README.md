@@ -65,7 +65,7 @@ Atualização da interface gráfica utilizando a EDT do Swing
 | `ClienteUDP` | Comunicação UDP do cliente |
 | `DownloadWorker` | Realiza os downloads em segundo plano |
 
-📚 O que estou praticando
+## 📚 O que estou praticando
 
 Neste projeto estou praticando principalmente:
 Programação em Java
