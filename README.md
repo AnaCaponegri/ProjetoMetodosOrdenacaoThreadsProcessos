@@ -2,8 +2,6 @@
 
 Projeto de estudos desenvolvido em Java com interface gráfica Swing, utilizando comunicação em rede para criar um sistema cliente-servidor de hospedagem e transferência de arquivos em uma rede local.
 
-Projeto de estudos desenvolvido em Java com interface gráfica Swing, utilizando comunicação em rede para criar um sistema cliente-servidor de hospedagem e transferência de arquivos em uma rede local.
-
 📌 O que o projeto faz
 
 O sistema é dividido em duas aplicações:
@@ -47,9 +45,9 @@ Foram utilizados conceitos de concorrência para permitir que o sistema realize 
 
 Thread para atender múltiplas conexões no servidor
 SwingWorker para realizar downloads em segundo plano
-Atualização da interface gráfica de forma segura utilizando a EDT do Swing
+Atualização da interface gráfica utilizando a EDT do Swing
 
-📂 Estrutura de pacotes
+## 📂 Estrutura de pacotes
 
 | Pacote/Classe | O que faz |
 |---|---|
